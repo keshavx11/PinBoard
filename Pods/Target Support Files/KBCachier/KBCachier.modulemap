@@ -1,0 +1,6 @@
+framework module KBCachier {
+  umbrella header "KBCachier-umbrella.h"
+
+  export *
+  module * { export * }
+}

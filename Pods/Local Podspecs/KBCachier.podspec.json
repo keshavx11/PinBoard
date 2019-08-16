@@ -1,0 +1,22 @@
+{
+  "name": "KBCachier",
+  "version": "0.0.1",
+  "summary": "An easy to integrate and use api cache library.",
+  "description": "This library provides an async image, JSON and Data downloader with cache support. For convenience, Extension for UIImageView has been added. Download Data asynchronously, cache response in memory, set max cache size and more with KBCachier!",
+  "homepage": "https://github.com/keshavx11/KBCachier",
+  "license": "MIT",
+  "authors": {
+    "Keshav Bansal": "keshav_x11@yahoo.co.in"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source": {
+    "git": "https://github.com/keshavx11/KBCachier.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "KBCachier",
+  "exclude_files": "Classes/Exclude",
+  "swift_versions": "5",
+  "swift_version": "5"
+}

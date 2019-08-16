@@ -3,17 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		250E707ED6F7D3CFA96E9FA7 /* Pods_PinBoardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3DDC29CB7D9D5586723D4E /* Pods_PinBoardTests.framework */; };
 		6B4106C22301BA9500FC4BE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4106C12301BA9500FC4BE6 /* AppDelegate.swift */; };
-		6B4106C42301BA9500FC4BE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4106C32301BA9500FC4BE6 /* ViewController.swift */; };
 		6B4106C72301BA9500FC4BE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4106C52301BA9500FC4BE6 /* Main.storyboard */; };
 		6B4106C92301BA9900FC4BE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B4106C82301BA9900FC4BE6 /* Assets.xcassets */; };
 		6B4106CC2301BA9900FC4BE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4106CA2301BA9900FC4BE6 /* LaunchScreen.storyboard */; };
 		6B4106D72301BA9A00FC4BE6 /* PinBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4106D62301BA9A00FC4BE6 /* PinBoardTests.swift */; };
 		6B4106E22301BA9A00FC4BE6 /* PinBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4106E12301BA9A00FC4BE6 /* PinBoardUITests.swift */; };
+		6B4107B72301E4AA00FC4BE6 /* PinModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4107B62301E4AA00FC4BE6 /* PinModels.swift */; };
+		6B4107BD23025EDF00FC4BE6 /* PinBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4107BC23025EDF00FC4BE6 /* PinBoardVC.swift */; };
+		6B4107BF2302624800FC4BE6 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4107BE2302624800FC4BE6 /* PhotoCell.swift */; };
+		6B4107C42302672000FC4BE6 /* PinBoardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4107C32302672000FC4BE6 /* PinBoardLayout.swift */; };
+		6B6BE5BC2307314A00704396 /* CacheHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6BE5BB2307314A00704396 /* CacheHelper.swift */; };
+		6B6BE5BF23073D2900704396 /* CPLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6BE5BE23073D2900704396 /* CPLoadingView.swift */; };
+		6BB8270223043DBB00C759EE /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB8270123043DBB00C759EE /* Utilities.swift */; };
+		6BB8270B2306F1CE00C759EE /* ImageViewerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB8270A2306F1CE00C759EE /* ImageViewerVC.swift */; };
+		A585FA19A0374A34F7FE9DE4 /* Pods_PinBoard_PinBoardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C58A97A8EA653248C11303 /* Pods_PinBoard_PinBoardUITests.framework */; };
+		D3A7ACF91463612E4EF41C19 /* Pods_PinBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04EAE2FE93A0F1229FCB113 /* Pods_PinBoard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +43,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6B41077A2301E0AB00FC4BE6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		15312277A66558269583B528 /* Pods-PinBoard-PinBoardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinBoard-PinBoardUITests.debug.xcconfig"; path = "Target Support Files/Pods-PinBoard-PinBoardUITests/Pods-PinBoard-PinBoardUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		56604091116DE62DB2ED52B5 /* Pods-PinBoard-PinBoardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinBoard-PinBoardUITests.release.xcconfig"; path = "Target Support Files/Pods-PinBoard-PinBoardUITests/Pods-PinBoard-PinBoardUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6B4106BE2301BA9500FC4BE6 /* PinBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B4106C12301BA9500FC4BE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6B4106C32301BA9500FC4BE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6B4106C62301BA9500FC4BE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B4106C82301BA9900FC4BE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B4106CB2301BA9900FC4BE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +71,21 @@
 		6B4106DD2301BA9A00FC4BE6 /* PinBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B4106E12301BA9A00FC4BE6 /* PinBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinBoardUITests.swift; sourceTree = "<group>"; };
 		6B4106E32301BA9A00FC4BE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B4107B62301E4AA00FC4BE6 /* PinModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinModels.swift; sourceTree = "<group>"; };
+		6B4107BC23025EDF00FC4BE6 /* PinBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinBoardVC.swift; sourceTree = "<group>"; };
+		6B4107BE2302624800FC4BE6 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		6B4107C32302672000FC4BE6 /* PinBoardLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinBoardLayout.swift; sourceTree = "<group>"; };
+		6B6BE5BB2307314A00704396 /* CacheHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheHelper.swift; sourceTree = "<group>"; };
+		6B6BE5BE23073D2900704396 /* CPLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CPLoadingView.swift; path = PinBoard/Utilities/CPLoadingView.swift; sourceTree = SOURCE_ROOT; };
+		6B7526600AE60E684017E4C2 /* Pods-PinBoardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinBoardTests.debug.xcconfig"; path = "Target Support Files/Pods-PinBoardTests/Pods-PinBoardTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6BB8270123043DBB00C759EE /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		6BB8270A2306F1CE00C759EE /* ImageViewerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerVC.swift; sourceTree = "<group>"; };
+		76C58A97A8EA653248C11303 /* Pods_PinBoard_PinBoardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinBoard_PinBoardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2483F0BF87945BB782C976E /* Pods-PinBoardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinBoardTests.release.xcconfig"; path = "Target Support Files/Pods-PinBoardTests/Pods-PinBoardTests.release.xcconfig"; sourceTree = "<group>"; };
+		B04EAE2FE93A0F1229FCB113 /* Pods_PinBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB3DDC29CB7D9D5586723D4E /* Pods_PinBoardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinBoardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF76FC5B0D23733596762B14 /* Pods-PinBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinBoard.release.xcconfig"; path = "Target Support Files/Pods-PinBoard/Pods-PinBoard.release.xcconfig"; sourceTree = "<group>"; };
+		F417DAE82C73BC8616525AB1 /* Pods-PinBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinBoard.debug.xcconfig"; path = "Target Support Files/Pods-PinBoard/Pods-PinBoard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3A7ACF91463612E4EF41C19 /* Pods_PinBoard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				250E707ED6F7D3CFA96E9FA7 /* Pods_PinBoardTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +109,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A585FA19A0374A34F7FE9DE4 /* Pods_PinBoard_PinBoardUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		525E73AC4E37A2C5D5DB645F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F417DAE82C73BC8616525AB1 /* Pods-PinBoard.debug.xcconfig */,
+				EF76FC5B0D23733596762B14 /* Pods-PinBoard.release.xcconfig */,
+				15312277A66558269583B528 /* Pods-PinBoard-PinBoardUITests.debug.xcconfig */,
+				56604091116DE62DB2ED52B5 /* Pods-PinBoard-PinBoardUITests.release.xcconfig */,
+				6B7526600AE60E684017E4C2 /* Pods-PinBoardTests.debug.xcconfig */,
+				A2483F0BF87945BB782C976E /* Pods-PinBoardTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6B4106B52301BA9500FC4BE6 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +136,8 @@
 				6B4106D52301BA9A00FC4BE6 /* PinBoardTests */,
 				6B4106E02301BA9A00FC4BE6 /* PinBoardUITests */,
 				6B4106BF2301BA9500FC4BE6 /* Products */,
+				525E73AC4E37A2C5D5DB645F /* Pods */,
+				A978922CB7DE2A7AA65D743B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +155,12 @@
 			isa = PBXGroup;
 			children = (
 				6B4106C12301BA9500FC4BE6 /* AppDelegate.swift */,
-				6B4106C32301BA9500FC4BE6 /* ViewController.swift */,
+				6B6BE5BB2307314A00704396 /* CacheHelper.swift */,
+				6BB826FF23043D8D00C759EE /* Utilities */,
+				6B4107C2230266D200FC4BE6 /* Layouts */,
+				6B4107AF2301E41D00FC4BE6 /* Models */,
+				6B4107B22301E47100FC4BE6 /* Controllers */,
+				6B4107B32301E47100FC4BE6 /* Views */,
 				6B4106C52301BA9500FC4BE6 /* Main.storyboard */,
 				6B4106C82301BA9900FC4BE6 /* Assets.xcassets */,
 				6B4106CA2301BA9900FC4BE6 /* LaunchScreen.storyboard */,
@@ -125,6 +187,58 @@
 			path = PinBoardUITests;
 			sourceTree = "<group>";
 		};
+		6B4107AF2301E41D00FC4BE6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6B4107B62301E4AA00FC4BE6 /* PinModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6B4107B22301E47100FC4BE6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B4107BC23025EDF00FC4BE6 /* PinBoardVC.swift */,
+				6BB8270A2306F1CE00C759EE /* ImageViewerVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6B4107B32301E47100FC4BE6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B4107BE2302624800FC4BE6 /* PhotoCell.swift */,
+				6B6BE5BE23073D2900704396 /* CPLoadingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6B4107C2230266D200FC4BE6 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				6B4107C32302672000FC4BE6 /* PinBoardLayout.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		6BB826FF23043D8D00C759EE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6BB8270123043DBB00C759EE /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A978922CB7DE2A7AA65D743B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B04EAE2FE93A0F1229FCB113 /* Pods_PinBoard.framework */,
+				76C58A97A8EA653248C11303 /* Pods_PinBoard_PinBoardUITests.framework */,
+				BB3DDC29CB7D9D5586723D4E /* Pods_PinBoardTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +246,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B4106E62301BA9A00FC4BE6 /* Build configuration list for PBXNativeTarget "PinBoard" */;
 			buildPhases = (
+				F9CE7AF267D45F0BB35E56A2 /* [CP] Check Pods Manifest.lock */,
 				6B4106BA2301BA9500FC4BE6 /* Sources */,
 				6B4106BB2301BA9500FC4BE6 /* Frameworks */,
 				6B4106BC2301BA9500FC4BE6 /* Resources */,
+				6B41077A2301E0AB00FC4BE6 /* Embed Frameworks */,
+				941B0801E7901C64FC0D395F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +266,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B4106E92301BA9A00FC4BE6 /* Build configuration list for PBXNativeTarget "PinBoardTests" */;
 			buildPhases = (
+				6A7652BC83F219728677A3D1 /* [CP] Check Pods Manifest.lock */,
 				6B4106CE2301BA9A00FC4BE6 /* Sources */,
 				6B4106CF2301BA9A00FC4BE6 /* Frameworks */,
 				6B4106D02301BA9A00FC4BE6 /* Resources */,
@@ -167,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B4106EC2301BA9A00FC4BE6 /* Build configuration list for PBXNativeTarget "PinBoardUITests" */;
 			buildPhases = (
+				DA7B50A7D8F08F72D250871E /* [CP] Check Pods Manifest.lock */,
 				6B4106D92301BA9A00FC4BE6 /* Sources */,
 				6B4106DA2301BA9A00FC4BE6 /* Frameworks */,
 				6B4106DB2301BA9A00FC4BE6 /* Resources */,
+				8E8E7DA9A7578A31700FA153 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,13 +371,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6A7652BC83F219728677A3D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PinBoardTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E8E7DA9A7578A31700FA153 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PinBoard-PinBoardUITests/Pods-PinBoard-PinBoardUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PinBoard-PinBoardUITests/Pods-PinBoard-PinBoardUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PinBoard-PinBoardUITests/Pods-PinBoard-PinBoardUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		941B0801E7901C64FC0D395F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PinBoard/Pods-PinBoard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PinBoard/Pods-PinBoard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PinBoard/Pods-PinBoard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA7B50A7D8F08F72D250871E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PinBoard-PinBoardUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9CE7AF267D45F0BB35E56A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PinBoard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6B4106BA2301BA9500FC4BE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B4106C42301BA9500FC4BE6 /* ViewController.swift in Sources */,
+				6B6BE5BC2307314A00704396 /* CacheHelper.swift in Sources */,
+				6B4107C42302672000FC4BE6 /* PinBoardLayout.swift in Sources */,
+				6B4107BD23025EDF00FC4BE6 /* PinBoardVC.swift in Sources */,
+				6BB8270223043DBB00C759EE /* Utilities.swift in Sources */,
+				6B4107BF2302624800FC4BE6 /* PhotoCell.swift in Sources */,
+				6BB8270B2306F1CE00C759EE /* ImageViewerVC.swift in Sources */,
 				6B4106C22301BA9500FC4BE6 /* AppDelegate.swift in Sources */,
+				6B4107B72301E4AA00FC4BE6 /* PinModels.swift in Sources */,
+				6B6BE5BF23073D2900704396 /* CPLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,11 +660,14 @@
 		};
 		6B4106E72301BA9A00FC4BE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F417DAE82C73BC8616525AB1 /* Pods-PinBoard.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 293K6F3WH6;
 				INFOPLIST_FILE = PinBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,11 +681,14 @@
 		};
 		6B4106E82301BA9A00FC4BE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF76FC5B0D23733596762B14 /* Pods-PinBoard.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 293K6F3WH6;
 				INFOPLIST_FILE = PinBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,6 +702,7 @@
 		};
 		6B4106EA2301BA9A00FC4BE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B7526600AE60E684017E4C2 /* Pods-PinBoardTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +724,7 @@
 		};
 		6B4106EB2301BA9A00FC4BE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2483F0BF87945BB782C976E /* Pods-PinBoardTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +746,7 @@
 		};
 		6B4106ED2301BA9A00FC4BE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15312277A66558269583B528 /* Pods-PinBoard-PinBoardUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +767,7 @@
 		};
 		6B4106EE2301BA9A00FC4BE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56604091116DE62DB2ED52B5 /* Pods-PinBoard-PinBoardUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
