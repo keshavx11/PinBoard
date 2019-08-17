@@ -8,6 +8,10 @@
 
 Awesome way to show collection of images using KBCachier Library.
 
+## KBCachier
+
+Checkout this awesome image and json caching library made by me at **https://github.com/keshavx11/KBCachier**.
+
 ## Features
 - [x] Cache images and json in memory
 - [x] Beautiful animations
@@ -18,11 +22,6 @@ Awesome way to show collection of images using KBCachier Library.
 
 - iOS 10.0+
 - Xcode 10.0
-
-## KBCachier
-
-Checkout this awesome image and json caching library made by me at **https://github.com/keshavx11/KBCachier**.
-
 
 ```
 github "keshavx11/KBCachier"
