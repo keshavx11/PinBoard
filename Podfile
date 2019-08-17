@@ -13,6 +13,6 @@ target 'PinBoard' do
   end
   
   pod 'Hero', '~> 1.4'
-  pod 'KBCachier', :git => 'https://github.com/keshavx11/KBCachier.git', :tag => '0.0.1'
+  pod 'KBCachier', :git => 'https://github.com/keshavx11/KBCachier.git', :branch => 'master'
   
 end

@@ -4,7 +4,7 @@ PODS:
 
 DEPENDENCIES:
   - Hero (~> 1.4)
-  - KBCachier (from `https://github.com/keshavx11/KBCachier.git`, tag `0.0.1`)
+  - KBCachier (from `https://github.com/keshavx11/KBCachier.git`, branch `master`)
 
 SPEC REPOS:
   trunk:
@@ -12,18 +12,18 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   KBCachier:
+    :branch: master
     :git: https://github.com/keshavx11/KBCachier.git
-    :tag: 0.0.1
 
 CHECKOUT OPTIONS:
   KBCachier:
+    :commit: ee0518550a3d60da40250ebfbbfe22c3a9f66642
     :git: https://github.com/keshavx11/KBCachier.git
-    :tag: 0.0.1
 
 SPEC CHECKSUMS:
   Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
   KBCachier: 446b5fb442dd09ea3b6a5d017decc5b04dd9c1b3
 
-PODFILE CHECKSUM: 6baefaef8907661dddf17272ee0ecbf6c57363ed
+PODFILE CHECKSUM: c3dc9a4ea9e852490a3d4444168f8f8704e10318
 
 COCOAPODS: 1.8.0.beta.1

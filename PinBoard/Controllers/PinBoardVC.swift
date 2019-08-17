@@ -12,11 +12,14 @@ import Hero
 
 class PinBoardVC: UICollectionViewController {
 
+    @IBOutlet weak var retryView: UIView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
+    @IBOutlet weak var retryButton: UIButton!
+
     var refreshControl = UIRefreshControl()
 
     var pins = [Pin]()
+    var isLoadingData: Bool = false
     
     private let reuseIdentifier = "PhotoCell"
 
@@ -43,20 +46,31 @@ class PinBoardVC: UICollectionViewController {
         self.refreshControl.addTarget(self, action: #selector(self.reloadPins), for: .valueChanged)
     }
     
-    func getPins() {
-        Cachier.shared.fetchJSONData(forUrl: "https://pastebin.com/raw/wgkJgazE", completion: {[weak self] (response: [Pin]) in
-            if self?.refreshControl.isRefreshing ?? false {
+    @IBAction func getPins() {
+        if !self.isLoadingData {
+            self.isLoadingData = true
+            self.retryButton.isHidden = true
+            self.activityIndicator.isHidden = false
+            self.activityIndicator.startAnimating()
+            Cachier.shared.fetchJSONData(forUrl: "https://pastebin.com/raw/wgkJgazE", completion: {[weak self] (response: [Pin]) in
+                if self?.refreshControl.isRefreshing ?? false {
+                    self?.pins = response
+                    self?.refreshControl.endRefreshing()
+                } else {
+                    self?.pins.append(contentsOf: response)
+                }
                 self?.pins = response
-                self?.refreshControl.endRefreshing()
-            } else {
-                self?.pins.append(contentsOf: response)
-            }
-            self?.pins = response
-            self?.collectionView.reloadData()
-            self?.activityIndicator.stopAnimating()
-        }, error: { errorString in
-            
-        })
+                self?.getDataCompleted()
+                }, error: {[weak self] errorString in
+                    self?.getDataCompleted()
+            })
+        }
+    }
+    
+    func getDataCompleted() {
+        self.isLoadingData = false
+        self.collectionView.reloadData()
+        self.activityIndicator.stopAnimating()
     }
     
     @objc func reloadPins() {
@@ -71,6 +85,14 @@ class PinBoardVC: UICollectionViewController {
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if self.pins.count == 0 {
+            self.retryView.frame = collectionView.frame
+            collectionView.backgroundView = self.retryView
+            self.retryButton.isHidden = self.isLoadingData
+            self.activityIndicator.isHidden = !self.isLoadingData
+        } else {
+            collectionView.backgroundView = nil
+        }
         return self.pins.count
     }
 

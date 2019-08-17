@@ -17,6 +17,9 @@ class CacheHelper {
         Cachier.shared.isInMemoryCacheEnabled = true
         Cachier.shared.maxCacheSize = 10485760
         
+        // Set timeout to 5 seconds
+        Cachier.shared.timeOutForRequest = 5
+        
         // Set log level
         Cachier.shared.logLevel = .warning
         

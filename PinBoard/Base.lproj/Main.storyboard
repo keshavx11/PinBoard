@@ -19,11 +19,6 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewLayout key="collectionViewLayout" id="Q0x-Ue-x1x" customClass="PinBoardLayout" customModule="PinBoard" customModuleProvider="target"/>
-                        <activityIndicatorView key="backgroundView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="975-RC-OOI">
-                            <rect key="frame" x="0.0" y="-44" width="414" height="896"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="color" red="0.87058823529999996" green="0.058823529409999999" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
-                        </activityIndicatorView>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="zVg-tJ-BcU" customClass="PhotoCell" customModule="PinBoard" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
@@ -187,9 +182,44 @@
                     <connections>
                         <outlet property="activityIndicator" destination="975-RC-OOI" id="bJC-D3-lqq"/>
                         <outlet property="collectionView" destination="oqP-QZ-qLQ" id="QYp-Gz-yxp"/>
+                        <outlet property="retryButton" destination="053-gG-CMS" id="2S7-kF-Cge"/>
+                        <outlet property="retryView" destination="TLR-6W-HjX" id="1L1-ty-vhm"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yFO-UM-0UZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="TLR-6W-HjX">
+                    <rect key="frame" x="0.0" y="0.0" width="288" height="183"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="975-RC-OOI">
+                            <rect key="frame" x="0.0" y="73" width="288" height="37"/>
+                            <color key="color" red="0.87058823529999996" green="0.058823529409999999" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        </activityIndicatorView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="053-gG-CMS">
+                            <rect key="frame" x="0.0" y="118" width="288" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="OU4-i3-jef"/>
+                            </constraints>
+                            <state key="normal" title="API failed. Press to retry.">
+                                <color key="titleColor" red="0.87058823529999996" green="0.058823529409999999" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="getPins" destination="sID-uu-KvT" eventType="touchUpInside" id="IQG-0t-l9B"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="gTs-TY-Hsc" firstAttribute="trailing" secondItem="053-gG-CMS" secondAttribute="trailing" id="12e-kh-skA"/>
+                        <constraint firstAttribute="trailing" secondItem="975-RC-OOI" secondAttribute="trailing" id="3x9-bG-wW9"/>
+                        <constraint firstItem="975-RC-OOI" firstAttribute="leading" secondItem="TLR-6W-HjX" secondAttribute="leading" id="GSA-xf-IsO"/>
+                        <constraint firstItem="975-RC-OOI" firstAttribute="centerY" secondItem="TLR-6W-HjX" secondAttribute="centerY" id="OLt-Fo-AgQ"/>
+                        <constraint firstItem="053-gG-CMS" firstAttribute="leading" secondItem="TLR-6W-HjX" secondAttribute="leading" id="Zba-DC-LOj"/>
+                        <constraint firstItem="053-gG-CMS" firstAttribute="top" secondItem="975-RC-OOI" secondAttribute="bottom" constant="8" id="glB-FV-wcT"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="gTs-TY-Hsc"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="224.63768115942031" y="152.67857142857142"/>
         </scene>
