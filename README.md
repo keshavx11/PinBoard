@@ -23,10 +23,6 @@ Checkout this awesome image and json caching library made by me at **https://git
 - iOS 10.0+
 - Xcode 10.0
 
-```
-github "keshavx11/KBCachier"
-```
-
 ## LICENSE
 
 MIT License (see `LICENSE`)
